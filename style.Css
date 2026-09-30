@@ -1,0 +1,123 @@
+/* Para cambiar los colores, edita solo estas variables */
+:root {
+  --fondo: #16151a;
+  --fondo-claro: #1f1d24;
+  --texto: #d9d4c8;
+  --titulos: #ece6d6;
+  --rojo: #8f2626;
+  --rojo-claro: #b33030;
+  --borde: #3a3640;
+}
+
+body {
+  background-color: var(--fondo);
+  color: var(--texto);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.7;
+  margin: 0;
+}
+
+header {
+  background-color: var(--fondo-claro);
+  border-bottom: 3px solid var(--rojo);
+  padding: 32px 20px 16px;
+  text-align: center;
+}
+
+h1 {
+  color: var(--titulos);
+  font-size: 2.8rem;
+  letter-spacing: 6px;
+  margin: 0 0 16px;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: var(--texto);
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: var(--rojo-claro);
+  color: #ffffff;
+}
+
+nav a.actual {
+  border-bottom: 2px solid var(--rojo-claro);
+}
+
+main {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+}
+
+h2 {
+  border-bottom: 1px solid var(--borde);
+  color: var(--titulos);
+  font-size: 1.8rem;
+  padding-bottom: 6px;
+}
+
+h3 {
+  color: var(--titulos);
+  margin-bottom: 0;
+}
+
+figure {
+  margin: 20px 0;
+  text-align: center;
+}
+
+img {
+  border: 2px solid var(--rojo);
+  max-width: 100%;
+  height: auto;
+}
+
+figcaption {
+  font-size: 0.85rem;
+  margin-top: 6px;
+  opacity: 0.7;
+}
+
+strong {
+  color: var(--titulos);
+}
+
+em {
+  color: #c98a8a;
+}
+
+ol li {
+  margin-bottom: 6px;
+}
+
+dt {
+  border-left: 3px solid var(--rojo);
+  color: var(--titulos);
+  font-weight: bold;
+  margin-top: 16px;
+  padding-left: 10px;
+}
+
+dd {
+  margin-left: 13px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+  }
+}
